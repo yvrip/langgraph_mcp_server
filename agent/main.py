@@ -16,7 +16,6 @@ from langchain_core.runnables import RunnableConfig
 from langgraph.graph.message import add_messages
 
 load_dotenv()
-configura_credenciais_google()
 
 memory = InMemorySaver()
 
