@@ -1,0 +1,23 @@
+[project]
+name = "langgraph-plus-mcp-streamable-http-server"
+version = "0.1.0"
+description = "Langgraph agent using MCP Streamable HTTP Server"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx~=0.28.0",
+    "mcp>=1.9.0",
+    "langchain",
+    "load_dotenv",
+    "langgraph",
+    "langchain-mcp-adapters",
+    "langchain-google-genai",
+    "uvicorn",
+    "langchain-google-vertexai"
+]
+
+[tool.setuptools.packages.find]
+include = ["server*", "langgraph*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
